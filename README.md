@@ -1,73 +1,49 @@
-# To-Do List Application
-
-This is a JavaScript project for creating a to-do list application.
-
-## Description
-
-The application runs at `localhost:4444/to-do-list`.
-
-### Features
-
-- **Task Management**: Users can add tasks under specific categories from a dropdown menu. Tasks can be marked as completed, moving them from the outstanding list to the completed tasks list. Completed tasks can be removed by pressing a remove button.
-- **Category Management**: Users can add new categories with selected colors from a color picker. Categories can be removed or reset to the default types: Home, Garden, and Work. Removing a category will also remove all associated tasks.
-- **Navigation**: A navigation bar allows users to switch between the category and tasks pages.
-
-## Installation and Running
-
-### Prerequisites
-
-- Node.js (version 20)
+# README Editor Application
+ 
+This project is a README editor application built with React and Milkdown. It allows users to edit and update the README file of a GitHub repository through a user-friendly interface.
+ 
+## Features
+ 
+- Edit and update the README file of a GitHub repository.
+- Switch between editing and viewing modes.
+- Use Milkdown for a rich markdown editing experience.
+ 
+## Prerequisites
+ 
+- Node.js (version 14 or higher)
 - npm (Node Package Manager)
-- nvm (Node Version Manager)
-
-### Setup
-
-1. **Clone the Repository**
-
+ 
+## Installation
+ 
+1. Clone the repository:
+ 
    ```sh
-   git clone https://github.com/yourusername/yourproject.git
-   cd yourproject
-   ```
-2. **Install Dependencies**
+   git clone https://github.com/yourusername/readme-editor.git
+   cd readme-editor
 
-    Ensure you have nodemon and express installed:
+2. Install dependencies:
+`npm install`
 
-    ```sh
-    npm init -y
-    npm install -g nodemon
-    npm install express
-    ```
+3. Navigate to React application directory and install dependencies:
+```
+cd readme-editor
+npm install @milkdown/react @milkdown/theme-nord @milkdown/plugin-listner  @milkdown/present-commonmark  @milkdown/core
+```
 
-3. **Database Setup**
+## Running the Application
 
-    The application supports both Redis and PostgreSQL for data persistence. Depending on the branch you are using:
-    - For Redis, use the feature-22450 branch.
-    - For PostgreSQL, use the master or main branch.
+1. Start the Express server:
+```sh
+npm run server
+```
 
-    Install the necessary database modules:
+2. Start the React development server:
+```sh
+npm run client
+```
 
-    ```sh
-    npm install redis
-    npm install pg
-    ```
+3. Open your browser and navigate to http://localhost:3000 to view the application.
 
-    When using PostgreSQL, you need to initialize the database by runing the bootstrap SQL file:
+## Acknowledgments
 
-    ```sh
-    psql -d todoapp -f bootstrap.sql
-    psql -d todoapp <your_username> -f bootstrap.sql # If username required
-    ```
-
-4. **Run the Application**
-
-    Use Node Version Manager (nvm) to switch to Node.js version 20 and start the application:
-
-    ```ah
-    nvm use 20
-    npm run dev
-    ```
-
-    Open your browser and navigate to `http://localhost:4444`.
-
-### Credentials and Acknowledgements
-This application was created by Vlad Filip under the supervision of Ilinca Ion.
+This app was created by Vlad Filip under the supervision of Ilinca Ion.
