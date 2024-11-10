@@ -1,0 +1,36 @@
+{
+  "name": "readme-editor",
+  "version": "1.0.0",
+  "description": "Cotent manager for editing readme files of github repo",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "node server.js",
+    "build": "nodemon server.js",
+    "client": "cd readme-editor && npm start"
+  },
+  "dependencies": {
+    "axios": "^0.21.1",
+    "body-parser": "^1.19.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "react-markdown": "^9.0.1",
+    "simple-git": "^3.27.0"
+  },
+  "devDependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
+    "concurrently": "^9.1.0",
+    "nodemon": "^2.0.7"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vladlumfilip/Content-Manager.git"
+  },
+  "author": "Vlad Filip",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vladlumfilip/Content-Manager/issues"
+  },
+  "homepage": "https://github.com/vladlumfilip/Content-Manager#readme"
+}

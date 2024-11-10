@@ -1,0 +1,79 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-title {
+  font-size: 2.5em;
+  font-weight: bold;
+  color: #ffffff;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: #0056b3;
+}
+
+.App-header {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.App-description {
+  font-size: 1.25em;
+  margin: 20px 0; /* Add margin to separate the paragraph from other elements */
+  white-space: pre-wrap; /* Preserve whitespace and line breaks */
+}
+
+
+.App-description a {
+  color: #007bff; /* Optional: Change the link color */
+  text-decoration: none; /* Optional: Remove underline from link */
+}
+
+.App-description a:hover {
+  text-decoration: underline; /* Optional: Add underline on hover */
+}
+
+.App-bar {
+  border: none;
+  height: 2px; /* Adjust the height to make it thin */
+  background-color: #007bff; /* Blue color */
+  margin-top: 50px;
+  margin-left: 85px;
+  width: 90%;
+}
+
+.App-bar-div {
+  align-items: center;
+}
+
+h2 {
+  text-decoration: underline;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
